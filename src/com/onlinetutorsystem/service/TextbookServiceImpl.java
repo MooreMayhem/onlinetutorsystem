@@ -23,5 +23,25 @@ public class TextbookServiceImpl implements TextbookService {
 	public void setTextbookDAO(TextbookDAO textbookDAO) {
 		this.textbookDAO = textbookDAO;
 	}
+
+	@Override
+	public int add(Textbook textbook) {
+		return textbookDAO.addTextbook(textbook);
+	}
+
+	@Override
+	public int update(Textbook textbook) {
+		return textbookDAO.updateTextbook(textbook);
+	}
+
+	@Override
+	public int delete(Integer id) {
+		return textbookDAO.deleteTextbook(id);
+	}
+
+	@Override
+	public Textbook get(Integer id) {
+		return textbookDAO.get(id);
+	}
 	
 }

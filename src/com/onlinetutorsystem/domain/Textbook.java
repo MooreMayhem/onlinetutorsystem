@@ -2,15 +2,25 @@ package com.onlinetutorsystem.domain;
 
 public class Textbook {
 	
-	private int eBookId;
+	private int ebookId;
 	private String title;
 	private String author;
 	
-	public int geteBookId() {
-		return eBookId;
+	public Textbook() {
+		
 	}
-	public void seteBookId(int eBookId) {
-		this.eBookId = eBookId;
+	
+	public int getebookId() {
+		return ebookId;
+	}
+	public Textbook(int ebookId, String title, String author) {
+		super();
+		this.ebookId = ebookId;
+		this.title = title;
+		this.author = author;
+	}
+	public void setebookId(int ebookId) {
+		this.ebookId = ebookId;
 	}
 	public String getTitle() {
 		return title;

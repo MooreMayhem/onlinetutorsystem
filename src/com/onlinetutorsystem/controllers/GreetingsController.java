@@ -11,4 +11,6 @@ public class GreetingsController {
 	public String greet() {
 		return "gr";
 	}
+	
+	
 }
